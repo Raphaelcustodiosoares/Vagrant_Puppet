@@ -4,7 +4,7 @@
 
 Comandos Usandos Durante a criação do projeto , para melhor esclarecimento posterior.
 
-ensure => running # Garante que o serviço esteja rodando;
+<p>ensure => running # Garante que o serviço esteja rodando;</p>
 easdasdasd
 
  
