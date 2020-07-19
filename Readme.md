@@ -1,11 +1,8 @@
 
-* [Livro de Referência :](DevOps na prática: entrega de software confiável e automatizada)
+* Livro de Referência :(DevOps na prática: entrega de software confiável e automatizada)
 
 
 Comandos Usandos Durante a criação do projeto , para melhor esclarecimento posterior.
-
-
-
 
 ensure => running # Garante que o serviço esteja rodando
 enable => true # Garante que o serviço rode sempre que o servidor reiniciar
