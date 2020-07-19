@@ -1,0 +1,4 @@
+[mysql]
+    bind-adress=0.0.0.0
+    
+    
