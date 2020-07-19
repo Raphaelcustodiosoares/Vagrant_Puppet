@@ -4,13 +4,13 @@
 
 Comandos Usandos Durante a criação do projeto , para melhor esclarecimento posterior.
 
-<p>enable => true # Garante que o serviço rode sempre que o servidor reiniciar</p>
-<p>hassstatus => # Declara que o serviço entende status</p>
-<p>hasrestart => # Declara que o serviço entende restart</p>
-<p>require => # Declara uma dependencia com o recurso em [""]</p>
-<p>notify => service [""] # Define uma dependência de execução: sempre que
-o recurso file for alterado, ele fará com que o recurso service execute </p>
-<p>unless => ""  #Puppet executa este comando de teste primeiro, em seguida, executa o comando principal a menos que o teste tenha um código de saída de 0 (sucesso).</p> 
+<br>enable => true # Garante que o serviço rode sempre que o servidor reiniciar</br>
+<br>hassstatus => # Declara que o serviço entende status</br>
+<br>hasrestart => # Declara que o serviço entende restart</br>
+<br>require => # Declara uma dependencia com o recurso em [""]</br>
+<br>notify => service [""] # Define uma dependência de execução: sempre que
+o recurso file for alterado, ele fará com que o recurso service execute </br>
+<br>unless => ""  #Puppet executa este comando de teste primeiro, em seguida, executa o comando principal a menos que o teste tenha um código de saída de 0 (sucesso).</p> 
 <p>command => "" # Comando Principal a ser executado</p>
 <p>onlyif => "" #uppet executa este comando de teste primeiro, e só executa o comando principal se o teste tiver um código de saída de 0 (sucesso)</p>
 <p>$var = "" #declarar variavel Puppet</p>
