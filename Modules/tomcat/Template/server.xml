@@ -73,6 +73,10 @@
                connectionTimeout="20000"
                URIEncoding="UTF-8"
                redirectPort="8443" />
+<%- connectors.each do |c| -%>
+<!--<Connector <%= c.sort.map{|k,v| "#{k}=’#{v}’"}.join(" ") %> /> -->  
+<%- end -%>
+
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"

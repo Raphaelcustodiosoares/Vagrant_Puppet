@@ -1,0 +1,18 @@
+<?xml version=’1.0’ encoding=’utf-8’?>
+<Context>
+<!-- Default set of monitored resources -->
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+<%- data_sources.sort.each do |data_source, db| -%>
+
+<Resource name="<%= data_source %>" auth="Container"
+    type="javax.sql.DataSource" maxActive="100"
+    maxIdle="30"
+    maxWait="10000"
+    username="<%= db_user %> "
+    password="<%= db_password %> "
+    driverClassName="com.mysql.jdbc.Driver"
+    url=""<%= db[’url’] + db[’schema’] %>"/>
+
+<% end %>
+</Context>
