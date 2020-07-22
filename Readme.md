@@ -37,6 +37,15 @@ o nome da variável sem o cifrão $.</p>
 <p>-[Class] = #Classes são apenas uma
 forma de dar nome a uma coleção de recursos que serão aplicados como uma
 unidade.Um bom uso de classes no Puppet é para configuração de serviços que
+-> impõe uma restrição na ordem de execução dos recursos.
+Da mesma forma que o parâmetro require indica uma dependência entre
+dois recursos, a flecha -> garante que o recurso do lado esquerdo – nesse
+caso a classe apt – seja executado antes do recurso do lado direito
+ex: Class[’apt’] -> Package <| |>
+<| |> #– também conhecida como operador espaçonave – é um coletor de
+recursos. O coletor representa um grupo de recursos e é composto de: um
+tipo de recurso, o operador <|, uma expressão de busca opcional e o operador
+|>.
 <!-- <<<<<<< HEAD
 você precisa instalar apenas uma vez no sistema
 defined type =  # E uma coleção de recursos que pode
