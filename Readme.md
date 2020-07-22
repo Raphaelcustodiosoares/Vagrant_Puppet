@@ -45,7 +45,7 @@ ex: Class[’apt’] -> Package <| |>
 <| |> #– também conhecida como operador espaçonave – é um coletor de
 recursos. O coletor representa um grupo de recursos e é composto de: um
 tipo de recurso, o operador <|, uma expressão de busca opcional e o operador
-|>.
+|>..
 <!-- <<<<<<< HEAD
 você precisa instalar apenas uma vez no sistema
 defined type =  # E uma coleção de recursos que pode
